@@ -1,0 +1,33 @@
+.profile-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: lightskyblue;
+  padding: 30px;
+}
+
+.profile-avatar {
+  width: 80%;
+  height: auto;
+}
+
+.profile-name {
+  margin-top: 30px;
+  font-size: 32px;
+  color: indigo;
+  font-weight: 900;
+}
+
+.profile-tag {
+  margin-top: 10px;
+  color: darkslateblue;
+  font-size: 20px;
+  font-weight: normal;
+}
+.profile-location {
+  margin-top: 10px;
+  color: darkslateblue;
+  font-size: 24px;
+  font-weight: bolder;
+}

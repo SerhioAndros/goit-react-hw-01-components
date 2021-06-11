@@ -1,0 +1,28 @@
+.profile-stats-list {
+  display: flex;
+  align-items: flex-start;
+  background-color: lightseagreen;
+}
+
+.profile-stats-item {
+  padding: 10px 0;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 3);
+  border: 1px solid #afb1b8;
+}
+
+.profile-stats-label {
+  font-size: 22px;
+  color: indigo;
+  font-weight: 400;
+}
+
+.profile-stats-quantity {
+  font-size: 25px;
+  color: indigo;
+  font-weight: 900;
+}

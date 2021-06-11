@@ -1,19 +1,20 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "./StatList.css";
 
 const StatList = ({ stats }) => (
-  <ul className="stats">
-    <li>
-      <span className="label">Followers </span>
-      <span className="quantity">{stats.followers}</span>
+  <ul className="profile-stats-list">
+    <li className="profile-stats-item">
+      <span className="profile-stats-label">Followers </span>
+      <span className="profile-stats-quantity">{stats.followers}</span>
     </li>
-    <li>
-      <span className="label">Views </span>
-      <span className="quantity">{stats.views}</span>
+    <li className="profile-stats-item">
+      <span className="profile-stats-label">Views </span>
+      <span className="profile-stats-quantity">{stats.views}</span>
     </li>
-    <li>
-      <span className="label">Likes </span>
-      <span className="quantity">{stats.likes}</span>
+    <li className="profile-stats-item">
+      <span className="profile-stats-label">Likes </span>
+      <span className="profile-stats-quantity">{stats.likes}</span>
     </li>
   </ul>
 );

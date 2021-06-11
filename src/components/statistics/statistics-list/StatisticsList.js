@@ -1,12 +1,25 @@
 import React from "react";
 import PropTypes from "prop-types";
+import styles from "./StatisticsList.module.css";
+
+const colorRandomizer = function () {
+  const randomColor = [];
+  for (let j = 0; j < 3; j++) {
+    randomColor.push(Math.floor(Math.random() * (200 - 50) + 50));
+  }
+  return randomColor;
+};
 
 const StatisticsList = ({ stats }) => (
-  <ul className="stat-list">
+  <ul className={styles.statList}>
     {stats.map((stat) => (
-      <li className="item" key={stat.id}>
-        <span className="label">{stat.label}</span>
-        <span className="percentage">{stat.percentage}</span>
+      <li
+        className={styles.item}
+        key={stat.id}
+        style={{ backgroundColor: `rgb(${colorRandomizer()})` }}
+      >
+        <span className={styles.label}>{stat.label}</span>
+        <span className={styles.percentage}>{stat.percentage}%</span>
       </li>
     ))}
   </ul>

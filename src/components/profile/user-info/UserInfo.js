@@ -1,13 +1,18 @@
 import React from "react";
 import PropTypes from "prop-types";
 import defaultImg from "../../../images/defaultImg.jpg";
+import "./UserInfo.css";
 
 const UserInfo = ({ avatar, name, tag, location }) => (
-  <div className="description">
-    <img src={avatar} alt={`Аватар пользователя ${name}`} className="avatar" />
-    <p className="name">{name}</p>
-    <p className="tag">@{tag}</p>
-    <p className="location">{location}</p>
+  <div className="profile-description">
+    <img
+      src={avatar}
+      alt={`Аватар пользователя ${name}`}
+      className="profile-avatar"
+    />
+    <p className="profile-name">{name}</p>
+    <p className="profile-tag">@{tag}</p>
+    <p className="profile-location">{location}</p>
   </div>
 );
 
